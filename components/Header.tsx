@@ -32,7 +32,7 @@ const Header = () => {
           </Text>
         </View>
       </View>
-      {true > 0 && (
+      {totalTodos > 0 && (
         <View style={headerStyles.progressContainer}>
           <View style={headerStyles.progressBarContainer}>
             <View style={headerStyles.progressBar}>

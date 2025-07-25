@@ -93,7 +93,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<undefined | ThemeContextType>(undefined);
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     AsyncStorage.getItem("darkMode").then((value) => {
